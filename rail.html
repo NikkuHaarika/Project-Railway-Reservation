@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railway Reservation</title>
+    <link rel="stylesheet" href="style2.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  
+    <div class="container1">
+        <div class="container">
+        <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="rail.html">Book Now</a></li>
+        <li><a href="meal.html">Meals</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <div class="container2">
+    <br> <h1 id="heading">Book your tickets</h1>
+       
+    <form>
+        <p>From : <input type="text" id="from" placeholder="From[STN]"></p><br>
+        <p>To : <input type="text" id="to" placeholder="TO[STN]"></p><br>
+        <p >DOJ : <input type="Date" placeholder="Date Of Journey" id="doj"></p><br>
+        <label >Class</label>
+        <select id="class" name="class" >
+            <option value="select" >SELECT</option>    
+            <option value="1AC" >1AC</option>
+            <option value="2AC" >2AC</option>
+            <option value="Sleeper" >Sleeper</option>
+            <option value="Chair">Chair</option> <br> 
+            </select>
+    </form><br><br>
+    Number of Tickets: <input type="number" id="quantity"><br><br>
+    <button class="submit" onclick="Book()">Find Trains </button>
+
+    </div>
+
+    <div class="popup2" id="bookTrain" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')">
+        <div class="popup1">
+        <h1 id="limit">Availability of trains are limited</h1> <br>
+        <div id="displaytrains"></div>
+        <button class="pop" onclick="Cancel()">Close</button>
+        </div> </div>
+
+    <div class="popup2" id="confirm" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')">
+        <div class="popup">
+            <form>
+                <br><br>First Name<input type="text" id="firstname">
+                Last Name<input type="name" id="lastname"> <br>
+                <br>  Email <input type="Email" id="email"> <br> 
+                <br>  Contact No. <input type="text" id="contact"> <br>
+                  <br> Gender:-
+                    <input type="radio" name="gender" value="male"> Male 
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other <br> 
+              
+            </form><br><br>
+        <h3>Number of Tickets: <span id="qnum"></span><br></h3>
+        <h3><div id="price"></div><br></h3>
+        <button class="pop1" onclick="closeAll()">Confirm Booking</button>
+        </div> </div>
+
+        <div class="popup2" id="done" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')" >
+            <div class="popup">
+              
+           <h1>Booked successfully</h1>
+            <h3>You will receive your ticket to the registered mail-id</h3>
+            <h1>Happy and Safe Journey!!</h1>
+            <h3>MASK UP</h3>
+               
+      <br><br>  <button class="pop1" onclick="close_all()">Close</button>
+     </div> </div>    
+                
+                
+    <script src="app.js"></script>
+</body>
+</html>

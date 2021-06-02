@@ -1,0 +1,78 @@
+body{
+	background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg');
+    background-size: cover;
+	display: flex;
+    justify-content: center;
+    font-size: 18px;
+   
+}
+
+.container2{
+    text-align: center;
+    background-color: rgb(230, 215, 197); 
+    width: 600px;
+   margin-left: 520px;
+   margin-top: 100px;
+   height: 400px;
+}
+
+
+.container{
+	margin:auto;
+    background: lightyellow;
+	width: 1400px;
+	padding: 0px 0px 0px 130px;
+	height: 50px;
+	margin-top: 20px;
+    text-align: center;
+}
+
+.container ul{
+	padding: 0;
+	list-style: none;;
+}
+.container ul li{
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	margin-right:  10px;
+}
+
+.container ul li a{
+	text-decoration: none;
+	color: darkblue;
+	padding: 25px 25px 25px 25px;
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px; 
+     border-bottom-right-radius:10px; 
+    border-bottom-left-radius:10px; 
+    display:block;
+    text-align: center;
+}
+
+.container ul li a:hover{
+	text-decoration: none;
+	color:darkred;
+	background: lightgreen;
+}
+
+.login {
+    font-size: 20px;
+    background-color: #555;
+    color: white;
+   right: 28px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+  
+  }
+
+  .container1{
+    height: 100px;
+	border:1px solid red;
+	background: lightyellow;
+    text-align: center;
+	
+} 
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN RAILWAY RESERVATION</title>
+    <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+  <div class="container1">
+    <div class="container">
+    <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="rail.html">Book Now</a></li>
+    <li><a href="meal.html">Meals</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</div>
+
+<div id="menu">
+  <table>
+     
+      <th id="title"><h1>Menu</h1></th>
+      <th id="title1"></th>
+    <tr>
+      <td class="list"> Parotta --  ₹100 </td>
+       <td><button class="order" onclick="ordernow()">Order Now</button></td>
+  </tr>
+     <tr>
+        <td class="list">NASTHA --  ₹50</td>
+        <td ><button class="order" onclick="ordernow()">Order Now</button></td>
+    </tr>
+     <tr>
+        <td class="list"> FULL MEALS NON VEG --  ₹200 </td>
+        <td><button class="order" onclick="ordernow()">Order Now</button></td>
+    </tr>
+     <tr>
+        <td class="list">FULL Meals VEG --  ₹150 </td>
+        <td><button class="order" onclick="ordernow()">Order Now</button></td>
+    </tr>
+    <tr>
+        <td class="list">BEVERAGES --  ₹100</td>
+        <td><button class="order" onclick="ordernow()">Order Now</button></td>
+    </tr> 
+    
+  </table>
+
+</div> 
+<div class="popup2" id="final" style="background-image: url('https://msmarket.coop/wp-content/uploads/Family-Meal_web-e1567116051451.jpg');">
+  <div class="popup">
+  <br><br> Enter PNR  <input type="input"><br><br><br>
+  Enter Coach-Seat Number <input type="input"><br>
+  <button type="button" class="nav" onclick="meal_order()">Book</button>
+  <button class="nav" onclick="meal_close()">Close</button>
+
+  <div class="popup2" id="meal_ordered" style="background-image: url('https://msmarket.coop/wp-content/uploads/Family-Meal_web-e1567116051451.jpg')">
+  <div class="popup">
+  <h1>Your Meal is Booked</h1>
+  <button class="nav" onclick="meal_closeAll()">Close</button>
+  </div> </div>
+  </div> </div>
+
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
+

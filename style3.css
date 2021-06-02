@@ -1,0 +1,131 @@
+body{
+	background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg');
+    background-size: cover;
+	display: flex;
+    justify-content: center;
+}
+
+#title{
+    width: 800px;
+}
+#title1{
+    width: 400px;
+}
+
+.container{
+	margin:auto;
+	width: 1400px;
+	padding: 0px 0px 0px 130px;
+	height: 50px;
+	margin-top: 20px;
+    text-align: center;
+}
+
+.container ul{
+	padding: 0;
+	list-style: none;;
+}
+.container ul li{
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	margin-right:  10px;
+}
+
+.container ul li a{
+	text-decoration: none;
+	color: darkblue;
+	padding: 25px 25px 25px 25px;
+    border-top-right-radius:10px; 
+    border-top-left-radius:10px; 
+     border-bottom-right-radius:10px; 
+    border-bottom-left-radius:10px; 
+    display:block;
+    text-align: center;
+}
+
+.container ul li a:hover{
+	background: lightgreen;
+}
+
+.container1{
+    height: 100px;
+	border:1px solid red;
+	background: lightyellow;
+    text-align: center;
+	
+} 
+
+#menu{
+    margin-right: 100px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.nav{
+    padding: 10px 50px 10px 50px;
+    background-color: #66ff66;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 60px;
+    }
+
+ .popup2 {
+    background-size: cover;
+        width: 100%;
+         height:100%;
+         background-color: black;
+        font-size: 20px;
+         position: fixed;
+         left: 0;
+         bottom:0;
+         display: flex;
+         justify-content: center;
+         align-items:  center;
+         display: none;
+       }
+
+  .popup{
+        min-width: 500px;
+         min-height: 300px;
+         background-color: white;
+         border-radius: 8px;
+         text-align: center;
+         padding:10px 10px 10px 10px;
+       margin:0px 5px 0px 5px ;
+       }
+
+ table
+       {
+            width: 800px;
+            margin-left: 30px;
+            margin-top: 50px;
+      }
+       th{
+            border: 1px solid black;
+             background-color: red;
+            font-weight: bold;
+            padding: 10px;
+           
+  }
+  td{
+            border: 2px solid black;
+            background-color: rgb(230, 215, 197);
+            font-weight: bold;
+            padding: 50px;
+            font-size: 20px;
+  }
+  
+       
+  td:hover{
+      background-color: lightblue;
+  }
+  
+  .order{
+      padding: 10px 10px 10px 10px;
+      width: 200px;
+      background-color:#66ff66;
+      border-radius: 20px;
+      font-size: 15px;
+  }
