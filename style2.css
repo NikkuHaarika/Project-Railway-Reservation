@@ -1,17 +1,22 @@
 body{
-	background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg');
+	/* background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg'); */
+    background-image: url('https://cdn.dribbble.com/users/2181561/screenshots/9916474/media/a517b8f413ab49ccf3a9c969dffadd38.png?compress=1&resize=1600x1200');
      background-size: cover;
 	display: flex;
     justify-content: center;
 }
 
 .container2{
-     text-align: center;
-    background-color: rgb(230, 215, 197); 
+    text-align: center;
+    /* background-color: rgb(230, 215, 197);  */
+    background-color: white;
     width: 500px;
-    margin-left: 830px;
+    /* margin-left: 830px; */
+    margin-right: 700px;
+    margin-left: 200px;
     margin-top: 130px;
    height: 450px;
+   border:1px solid red;
 }
 
 .container{
@@ -46,16 +51,11 @@ body{
     text-align: center;
 }
 
-.container ul li a:hover{
-	text-decoration: none;
-	color:darkred;
-	background: lightgreen;
-}
-
 .container1{
     height: 100px;
 	border:1px solid red;
-	background: lightyellow;
+	background-color: white;
+    /* background: lightyellow; */
     text-align: center;
 	
 } 
@@ -72,15 +72,16 @@ body{
      justify-content: center;
      align-items:  center;
      display: none;
-   }
-
-   .popup:hover{
+     border:1px solid red;
+}
+  
+   /* .popup:hover{
        background-color: rgb(224, 240, 224);
    }
    
    .popup1:hover{
     background-color: rgb(224, 240, 224);
-}
+} */
 
 .popup{
     font-size: 18px;
@@ -92,6 +93,7 @@ body{
      border-radius: 8px;
      text-align: center;
      padding:10px 10px 10px 10px;
+     border:1px solid red;
   
    }
 
@@ -102,17 +104,20 @@ body{
      border-radius: 8px;
      padding:10px 10px 10px 10px;
      margin:0px 5px 0px 5px ;
+     border:1px solid red;
    }
    
 .submit{
     font-size: 20px;
-    background-color: #555;
+    /* background-color: #555; */
+    background-color: darkblue;
     color: white;
    right: 28px;
     width: 280px;
     height: 40px;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .ptrain {
@@ -144,8 +149,9 @@ h2{
 .ptrain:hover{
     transform: scale(1.15);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-    background-color: rgb(231, 185, 128);
-
+    /* background-color: rgb(231, 185, 128); */
+    background-color:rgb(213, 235, 243) ;
+    cursor: pointer;
 }
 
 #displaytrains {
@@ -156,8 +162,10 @@ h2{
 }
 
 .pop1 {
-    background-color:#66ff66;
-    color: black;
+    /* background-color:#66ff66; */
+    background-color: darkblue;
+    /* color: black; */
+    color: white;
     font-size: 20px;
     padding: 16px 20px;
      bottom: 23px;
@@ -165,22 +173,64 @@ h2{
     width: 280px;
     text-align: center;
     align-items: center;
+    cursor: pointer;
   }
 
   .pop{
       margin-top: 20px;
-      background-color:  #66ff66;
+      /* background-color:  #66ff66; */
+      background-color: darkblue;
+      color: white;
       font-size: 20px;
       height: 38px;
       width: 80px;
+      cursor: pointer;
   }
-.pop:hover{
+/* .pop:hover{
     background-color: lightgreen; ;
-}
+} */
 
 #qnum{
     margin-right: 25px;
     
 }
 
+.btn{
+    margin-left: 600px;
+    margin-top: 25px;
+    background-color: black;
+    border: none;
+     color: white;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
+#btn1{
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+.popup3 {
+   width: 100%;
+    height:100%;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    display: none;
+  }
+
+.popup4{
+   min-width: 50px;
+    min-height: 23px;
+    background-color: white;
+   text-align: center;
+  cursor: pointer;
+  margin-left: 1440px;
+  margin-bottom: 550px;
+  }
