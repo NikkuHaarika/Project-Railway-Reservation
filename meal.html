@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDIAN RAILWAY RESERVATION</title>
     <link rel="stylesheet" href="style3.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container1">
     <div class="container">
     <ul>
-     <li><img src="https://www.logolynx.com/images/logolynx/f8/f8e0df0bf33d6da281228e6b881ecc3f.jpeg" width="100px" id="logo"></li>
+    <li><img src="https://www.logolynx.com/images/logolynx/f8/f8e0df0bf33d6da281228e6b881ecc3f.jpeg" width="100px" id="logo"></li>
     <li><a href="index.html">Home</a></li>
     <li><a href="rail.html">Book Now</a></li>
     <li><a href="meal.html">Meals</a></li>
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
+  <button class="btn" onclick="logout()"><i class="fa fa-bars"></i></button>
 </div>
 
 <div id="menu">
@@ -50,7 +52,8 @@
 </div> 
 <div class="popup2" id="final" style="background-image: url('https://msmarket.coop/wp-content/uploads/Family-Meal_web-e1567116051451.jpg');">
   <div class="popup">
-  <br><br> Enter PNR  <input type="input"><br><br><br>
+  <br><br><br>
+  Enter mobile number* <input type="text"><br><br>
   Enter Coach-Seat Number <input type="input"><br>
   <button type="button" class="nav" onclick="meal_order()">Book</button>
   <button class="nav" onclick="meal_close()">Close</button>
@@ -62,7 +65,11 @@
   </div> </div>
   </div> </div>
 
-</div>
+  <div class="popup3" id="logout1">
+    <div class="popup4">
+      <button id="btn1" onclick="logout1()">Signout</button>
+      
+    </div> </div>
 
 
 <script src="app.js"></script>
