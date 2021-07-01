@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Railway Reservation</title>
     <link rel="stylesheet" href="style4.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container1">
@@ -17,16 +18,16 @@
         <li><a href="meal.html">Meals</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <button class="btn" onclick="logout()"><i class="fa fa-bars"></i></button>
     </div>
-
+   
     <div class="container2">
-        
+     
    <br>
       <form id="contactus">
-        <br><br>First Name<input type="text">
+        <br><br>First Name*<input type="text">
         Last Name<input type="name"> <br> 
-   <br> Email <input type="Email"> <br><br>
-   <br> Contact No. <input type="text"> <br> <br><br>
+   <br> Contact No.* <input type="text"> <br> <br><br>
    Query <input type="text"> <br> <br><br>
    Gender:-<input type="radio"> Male 
        <input type="radio"> Female
@@ -36,8 +37,10 @@
  </form>
    <br>
     <button class="submit" onclick="contact_open()">Submit</button>
+    <button class="submit" onclick="emerge()">Emergency</button>
      
 </div>
+
      <div class="popup2" id="contact">
      <div class="popup">
      <h1>Sorry for the inconvenience caused</h1>
@@ -46,7 +49,18 @@
      <button class="nav" onclick="contact_close()">Close</button>
      </div> </div>
 
-  
+     <div class="popup2" id="emer">
+      <div class="popup">
+      <h1>We are just a call away</h1>
+      <h2>We will reach you immediately</h2>
+      <button class="nav" onclick="close_eme()">Close</button>
+      </div> </div>
+
+ <div class="popup3" id="logout1">
+    <div class="popup4">
+      <button id="btn1" onclick="logout1()">Signout</button>
+      
+    </div> </div>
    
        
     
