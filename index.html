@@ -10,25 +10,27 @@
     <title>Indian Railway Reservation</title>
 </head>
 <body>
-    
+ 
     <div class="container1">
         <div class="container">
+    
         <ul>
         <li><img src="https://www.logolynx.com/images/logolynx/f8/f8e0df0bf33d6da281228e6b881ecc3f.jpeg" width="100px" id="logo"></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="rail.html">Book Now</a></li>
-        <li><a href="meal.html">Meals</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a >Book Now</a></li>
+        <li><a >Meals</a></li>
+        <li><a >Contact Us</a></li>
       </ul>
-    </div> 
+    </div> <br><br>
     
 
-    <div class="container2">
+    <div class="container2" id="contain">
       
    <br>
+
       <form id="signup">
    <br><br>First Name<input type="text" id="firstname">Last Name<input type="text" id="lastname"> <br><br>
-   <br>  Email <input type="Email" id="email"> <br> <br>
+   <br>  Password <input type="password" id="pd"> <br> <br>
    <br>  Contact No. <input type="text" id="contact"> <br> <br>
      <br> Gender:-
        <input type="radio"> Male 
@@ -37,11 +39,21 @@
  
     </form><br>
    
-  <br>  <button class="login" onclick="sigin()">Login</button>
+  <br>  <button class="login" onclick="sigin()">Login</button><br>
+  <a href="#signup1" onclick="signup()">Do not have an account? Signup</a>
 </div>
 
-</div>
-
+<div class="popup2" id="signup1">
+  <div class="popup">
+    <br>
+    <form id="signup2">
+ <br>  Email <input type="Email" id="email"> <br> <br>
+ Password <input type="password" name="Password" id="pd"><br><br>
+ Confirm Password <input type="password" name="cPassword" id="cpd">
+  </form><br>
+ 
+<br>  <button class="login" onclick="sigin()">Signup</button><br>
+</div> </div>
 
 
     <script src="app.js"></script>
