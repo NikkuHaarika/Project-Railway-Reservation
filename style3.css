@@ -1,5 +1,6 @@
 body{
-	background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg');
+	/* background-image: url('https://www.itsabouttravelling.com/wp-content/uploads/2018/06/orangeville-ontario-trains-hdr-03.jpg'); */
+    background-image: url('https://cdn.dribbble.com/users/2181561/screenshots/9916474/media/a517b8f413ab49ccf3a9c969dffadd38.png?compress=1&resize=1600x1200');
     background-size: cover;
 	display: flex;
     justify-content: center;
@@ -44,14 +45,12 @@ body{
     text-align: center;
 }
 
-.container ul li a:hover{
-	background: lightgreen;
-}
 
 .container1{
     height: 100px;
 	border:1px solid red;
-	background: lightyellow;
+	/* background: lightyellow; */
+    background-color: white;
     text-align: center;
 	
 } 
@@ -104,28 +103,72 @@ body{
       }
        th{
             border: 1px solid black;
-             background-color: red;
+             /* background-color: red; */
+             background-color: darkblue;
             font-weight: bold;
             padding: 10px;
            
   }
   td{
             border: 2px solid black;
-            background-color: rgb(230, 215, 197);
+            /* background-color: rgb(230, 215, 197); */
+            background-color: white;
             font-weight: bold;
             padding: 50px;
             font-size: 20px;
   }
   
        
-  td:hover{
+  /* td:hover{
       background-color: lightblue;
-  }
+  } */
   
   .order{
       padding: 10px 10px 10px 10px;
       width: 200px;
-      background-color:#66ff66;
+      /* background-color:#66ff66; */
+      background-color: lightblue;
       border-radius: 20px;
       font-size: 15px;
+      cursor: pointer;
+  }
+
+  .btn{
+    margin-left: 600px;
+    margin-top: 25px;
+    background-color: black;
+    border: none;
+     color: white;
+    padding: 5px 5px 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn1{
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+.popup3 {
+   width: 100%;
+    height:100%;
+    position: fixed;
+    left: 0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    display: none;
+  }
+
+.popup4{
+   min-width: 50px;
+    min-height: 23px;
+    background-color: white;
+   text-align: center;
+  cursor: pointer;
+  margin-left: 1440px;
+  margin-bottom: 550px;
   }
