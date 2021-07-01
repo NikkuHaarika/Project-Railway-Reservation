@@ -8,18 +8,20 @@
     <title>Indian Railway Reservation</title>
     <link rel="stylesheet" href="style2.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   
     <div class="container1">
         <div class="container">
         <ul>
-        <li><img src="https://www.logolynx.com/images/logolynx/f8/f8e0df0bf33d6da281228e6b881ecc3f.jpeg" width="100px" id="logo"></li>
+         <li><img src="https://www.logolynx.com/images/logolynx/f8/f8e0df0bf33d6da281228e6b881ecc3f.jpeg" width="100px" id="logo"></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="rail.html">Book Now</a></li>
         <li><a href="meal.html">Meals</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+      <button class="btn" onclick="logout()"><i class="fa fa-bars"></i></button>
     </div>
     
     <div class="container2">
@@ -43,32 +45,30 @@
 
     </div>
 
-    <div class="popup2" id="bookTrain" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')">
+
+    <div class="popup2" id="bookTrain" style="background-image:url('https://cdn.dribbble.com/users/2181561/screenshots/9916474/media/a517b8f413ab49ccf3a9c969dffadd38.png?compress=1&resize=1600x1200')">
         <div class="popup1">
         <h1 id="limit">Availability of trains are limited</h1> <br>
         <div id="displaytrains"></div>
         <button class="pop" onclick="Cancel()">Close</button>
         </div> </div>
 
-    <div class="popup2" id="confirm" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')">
+    <div class="popup2" id="confirm" style="background-image:url('https://cdn.dribbble.com/users/2181561/screenshots/9916474/media/a517b8f413ab49ccf3a9c969dffadd38.png?compress=1&resize=1600x1200')">
         <div class="popup">
             <form>
                 <br><br>First Name<input type="text" id="firstname">
                 Last Name<input type="name" id="lastname"> <br>
-                <br>  Email <input type="Email" id="email"> <br> 
+                
                 <br>  Contact No. <input type="text" id="contact"> <br>
-                  <br> Gender:-
-                    <input type="radio" name="gender" value="male"> Male 
-                    <input type="radio" name="gender" value="female"> Female
-                    <input type="radio" name="gender" value="other"> Other <br> 
-              
+                
             </form><br><br>
         <h3>Number of Tickets: <span id="qnum"></span><br></h3>
+        <h3><div id="depart"></div><br></h3>
         <h3><div id="price"></div><br></h3>
         <button class="pop1" onclick="closeAll()">Confirm Booking</button>
         </div> </div>
 
-        <div class="popup2" id="done" style="background-image:url('https://www.railpictures.net/images/d1/9/7/5/6975.1376120564.jpg')" >
+        <div class="popup2" id="done" style="background-image:url('https://cdn.dribbble.com/users/2181561/screenshots/9916474/media/a517b8f413ab49ccf3a9c969dffadd38.png?compress=1&resize=1600x1200')" >
             <div class="popup">
               
            <h1>Booked successfully</h1>
@@ -78,8 +78,17 @@
                
       <br><br>  <button class="pop1" onclick="close_all()">Close</button>
      </div> </div>    
-                
+      
+     <div class="popup3" id="logout1">
+        <div class="popup4">
+          <button id="btn1" onclick="logout1()">Signout</button>
+          
+        </div> </div>
                 
     <script src="app.js"></script>
 </body>
 </html>
+
+
+
+
