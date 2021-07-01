@@ -30,7 +30,7 @@ const options = {
                       <div>Train   : ${user.name}</div>
                       <div>From   : ${user.train_from}</div>
                       <div>To : ${user.train_to}</div>
-                      <div><button class="train" onclick="cnfrm()" style="background-color:#66ff66">Book now</button></div>
+                      <div><button class="train" onclick="cnfrm()" style="background-color:rgb(98, 98, 211)">Book now</button></div>
                      </div>`
         msg.innerHTML=ptrain;
    var train1=document.querySelectorAll(".train")
@@ -52,7 +52,8 @@ function cnfrm(){
   var quant=document.getElementById("quantity").value;
   var doj1=document.getElementById("doj").value;
   document.getElementById("confirm").style.display="flex";
-  document.getElementById("qnum").innerHTML=quant+" "+"on"+" "+doj1+" "+"at 4:45pm";
+  document.getElementById("qnum").innerHTML=quant;
+  document.getElementById("depart").innerHTML="Departure:"+" "+doj1+" at 4:45pm";
   const arr = [765,800,675, 625,832, 823];
 const random = Math.floor(Math.random() * arr.length);
 document.getElementById("price").innerHTML="Price:"+arr[random]*quant;
@@ -63,7 +64,7 @@ function closeAll(){
 }
 
 function close_all(){
-  window.location='rail.html';
+  window.location='meal.html';
 }
 
 function Cancel(){
@@ -98,28 +99,34 @@ function sigin(){
    var lastname=document.getElementById("lastname").value;
    var email=document.getElementById("email").value;
   var contact=document.getElementById("contact").value;
+  var pwd=document.getElementById("pd").value;
+  var cpwd=document.getElementById("cpd").value;
    var items=[];
    var item={
      fstname:firstname,
      lstname:lastname,
      mail:email,
-     num:contact
+     num:contact,
+     pass:pwd,
+     cpass:cpwd
    }
    if(JSON.parse(localStorage.getItem("name"))==null){
      items.push(item);
      localStorage.setItem("name",JSON.stringify(items))
     alert("Signed in successfully");
-    window.location='rail.html';
+    window.location='index.html';
    }
    else{
      var local=JSON.parse(localStorage.getItem("name"));
      local.map(data=>{
-       if(item.mail==data.mail){
-         alert("Already logged in");
+      
+        if(item.pass==data.cpass){
+         alert("logged in successfully");
          window.location='rail.html';
        }
        else{
          items.push(data);
+    
        }
        items.push(item);
        window.location='rail.html';
@@ -127,6 +134,29 @@ function sigin(){
      })
    }
 
+}
+
+function signup(){
+  document.getElementById("signup1").style.display="flex";
+  document.getElementById("contain").style.display="none";
+}
+
+function logout(){
+  document.getElementById("logout1").style.display="flex";
+}
+
+function logout1(){
+  localStorage.clear("name");
+  window.location='index.html';
+  alert("Signed out");
+}
+
+function emerge(){
+  document.getElementById("emer").style.display="flex";
+}
+
+function close_eme(){
+  document.getElementById("emer").style.display="none";
 }
 
 
